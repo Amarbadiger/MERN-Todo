@@ -1,0 +1,29 @@
+.Heading {
+  display: grid;
+  grid-template-columns: 150px 150px 100px;
+  gap: 10px;
+}
+.title {
+  padding: 8px;
+  border: none;
+  padding: 0 0 0 10px;
+  outline: none;
+  background-color: #edeef0;
+  border-radius: 10px;
+}
+.desc {
+  padding: 4px;
+  border: none;
+  padding: 0 0 0 10px;
+  outline: none;
+  background-color: #edeef0;
+  border-radius: 10px;
+}
+.btn {
+  padding: 4px;
+  background-color: #ff5945;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+}
