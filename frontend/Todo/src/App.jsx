@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { CreateTodo } from "./components/CreateTodo";
 import { Todos } from "./components/Todos";
@@ -12,9 +12,12 @@ function App() {
   //     completed: false,
   //   },mongodb+srv://amarbadiger:C2jrykPzYiQE6Gh0@cluster0.fh5tewx.mongodb.net/Todo-App
   // ];
-  fetch("http://localhost:3000/todos")
-    .then((res) => res.json())
-    .then((data) => settodo(data));
+  useEffect(() => {
+    fetch("http://localhost:3000/todos")
+      .then((res) => res.json())
+      .then((data) => settodo(data));
+  }, [todos]);
+
   // const todos = [
   //   {
   //     title: "Gym",
